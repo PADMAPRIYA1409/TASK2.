@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .nav-main {
+    background: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .nav-item {
+    display: flex;
+  }
+  .nav-link a {
+    text-decoration: none;
+    margin: 0 1.2rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding: 0.2rem 0.4rem;
+    color: black;
+  }
+  .nav-link a:hover {
+    background: plum;
+    color: white;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    transition: 2s;
+  }
+  .login-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(38, 31, 80);
+    width: 300px;
+    height: 200px;
+  }
+  .login-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .inputs input:hover {
+    transition: 2s;
+    cursor: pointer;
+  }
+  .inputs input {
+    width: 200px;
+    padding: 15px;
+    margin: 5px 0;
+    border: rgb(7, 63, 65);
+    outline: none;
+  }
+  .inputs input:focus {
+    box-shadow: 0 0 15px darkgrey;
+  }
+  .login-button button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background: blanchedalmond;
+    color: cadetblue;
+    border-radius: 2px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  .login-button:hover {
+    cursor: pointer;
+    background-color: darkcyan;
+    transition: 2s;
+  }
+  .img-eff img {
+    /*filter: brightness(20%);*/
+    /*filter: contrast(7);*/
+    /*filter: grayscale(1);*/
+    filter: saturate(50%);
+  }
+  .h-overflow {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(22, 236, 236);
+    overflow: auto;
+    cursor: alias;
+  }
+  .v-overflow {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(233, 156, 233);
+    white-space: nowrap;
+    overflow-x: scroll;
+    cursor: cell;
+  }
+  .img-eff img {
+    filter: grayscale(0.8);
+  }
+  .img-eff {
+    position: relative;
+    text-align: center;
+    color: rgb(105, 69, 24);
+  }
+  .my-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: blueviolet;
+    text-align: center;
+  }
+  .img-eff .my-text{
+      width: 200px;
+      color: rgb(252, 85, 8);
+      cursor: pointer;
+  }
+  *{
+    margin: 5px;
+    padding: 2px;
+  }
+  .table,th,td{
+    border: 1px solid goldenrod;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 10px;
+    cursor: progress;
+  }
+  td{
+    width: 8rem;
+    padding: 0.7 2rem;
+  }
+  th{
+    background-color: lightpink;
+    color: black;
+  }
+  tr:nth-child(even){
+    background-color: coral;
+  }
+  tr:hover{
+    background-color: chocolate;
+  }
+  /* grid */
+  .index{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+  
+  }
+  .grid{
+    background-color: coral;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+  }
+  .grid:nth-child(even){
+    background-color: cornflowerblue;
+  }
+  .class{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .class p{
+    border: 2px solid black;
+  }
+  p:hover{
+    background-color: rgb(134, 192, 192);
+    cursor: pointer;
+    color: rgb(24, 40, 54);
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: repeat(0,auto);
+    grid-template-rows:1fr 1fr 0.2fr 1fr 1fr 1fr;
+    height: 300px;
+    grid-template-areas: 
+    "hlo"
+    "ramkumar"
+    "webpage"
+    "particular"
+    "content";
+    gap: 0.2rem;
+  }
+  nav{
+    background-color: cadetblue;
+    grid-area: hlo;
+  }
+  main{
+    background-color: cornflowerblue;
+    grid-area: ramkumar;
+  }
+  .webpage{
+    background-color: darkgrey;
+    grid-area: webpage;
+  }
+  .particular{
+    background-color: darkseagreen;
+    grid-area: particular;
+  }
+  .content{
+    background-color: darkslategray;
+    grid-area: content;
+  }
+  footer{
+    background-color: rgb(82, 82, 116);
+    grid-area: footer tag;
+  }
